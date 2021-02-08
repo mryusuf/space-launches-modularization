@@ -1,0 +1,76 @@
+PODS:
+  - Alamofire (5.4.1)
+  - Cache (6.0.0)
+  - Differentiator (4.0.1)
+  - Imaginary (5.0.0):
+    - Cache (~> 6.0.0)
+  - Lightbox (2.5.0):
+    - Imaginary (~> 5.0.0)
+  - Realm (10.5.1):
+    - Realm/Headers (= 10.5.1)
+  - Realm/Headers (10.5.1)
+  - RealmSwift (10.5.1):
+    - Realm (= 10.5.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
+  - SnapKit (5.0.1)
+  - SwiftLint (0.42.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - Lightbox
+  - RealmSwift (~> 10)
+  - RxCocoa (~> 5.0)
+  - RxDataSources (~> 4.0)
+  - RxSwift (~> 5.0)
+  - SDWebImage (~> 5.0)
+  - SnapKit (~> 5.0.0)
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Cache
+    - Differentiator
+    - Imaginary
+    - Lightbox
+    - Realm
+    - RealmSwift
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SnapKit
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  Cache: 4ca7e00363fca5455f26534e5607634c820ffc2d
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  Imaginary: cf5e3a7dd6ab1dcbd47ba8ce5edf2307c4e99eb3
+  Lightbox: cc3d5124f024fa8197fd23f913160db1c61a1852
+  Realm: 77fcb4e0b9f2963ea06f584749a0d7dc9cab95e1
+  RealmSwift: 6abe6aa6cd8b70cc1a87afcb9232cabea74ff1ac
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
+
+PODFILE CHECKSUM: 491e506779287c8cf03485b9e2fd485d61c230bd
+
+COCOAPODS: 1.10.0
