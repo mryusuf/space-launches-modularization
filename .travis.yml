@@ -1,0 +1,13 @@
+before_install:
+  - gem install cocoapods
+install:
+  - brew update && brew upgrade swiftlint
+  - pod install
+language: swift
+osx_image: xcode12.2
+xcode_workspace: SpaceLaunches/SpaceLaunches.xcworkspace
+xcode_scheme: SpaceLaunches
+xcode_destination: platform=iOS Simulator,OS=14.2,name=iPhone 12
+script:
+ - swiftlint
+ - xcodebuild test -workspace 'SpaceLaunches/SpaceLaunches.xcworkspace' -scheme 'SpaceLaunches' -destination 'platform=iOS Simulator,OS=14.2,name=iPhone 12'
