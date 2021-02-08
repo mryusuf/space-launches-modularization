@@ -10,4 +10,4 @@ xcode_scheme: SpaceLaunches
 xcode_destination: platform=iOS Simulator,OS=14.2,name=iPhone 12
 script:
  - swiftlint
- - xcodebuild test -workspace 'SpaceLaunches/SpaceLaunches.xcworkspace' -scheme 'SpaceLaunches' -destination 'platform=iOS Simulator,OS=14.2,name=iPhone 12'
+ - xcodebuild test -workspace 'SpaceLaunches/SpaceLaunches.xcworkspace' -scheme 'SpaceLaunches' -destination 'platform=iOS Simulator,OS=14.2,name=iPhone 12' -quiet
