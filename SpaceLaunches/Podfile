@@ -1,6 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '11.0'
 
+source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/mryusuf/space-launches-corepodspec'
 
 use_frameworks!
@@ -23,7 +24,7 @@ target 'SpaceLaunches' do
   
 
   # Pods for SpaceLaunches
-  # pod 'SwiftLint'
+  pod 'SwiftLint'
   pod 'Alamofire', '~> 5.2'
   pod 'SDWebImage', '~> 5.0'
   pod 'RxCocoa', '~>5.0'
