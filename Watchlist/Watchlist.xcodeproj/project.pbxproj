@@ -13,7 +13,6 @@
 		8227576625CFE84600C24D51 /* LaunchWatchlistDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227576525CFE84600C24D51 /* LaunchWatchlistDomainModel.swift */; };
 		8227576925CFF23300C24D51 /* ToggleWatchlistRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227576825CFF23300C24D51 /* ToggleWatchlistRepository.swift */; };
 		8227576C25CFF58300C24D51 /* WatchlistTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227576B25CFF58300C24D51 /* WatchlistTransformer.swift */; };
-		8227576F25CFF59800C24D51 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8227576E25CFF59800C24D51 /* Core.framework */; };
 		8227577B25D00C0900C24D51 /* ToggleWatchlistLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227577A25D00C0900C24D51 /* ToggleWatchlistLocalDataSource.swift */; };
 		9813FA15B0F73466CCA39D86 /* Pods_Watchlist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA5F672C3D34160E0A2CC0D /* Pods_Watchlist.framework */; };
 /* End PBXBuildFile section */
@@ -40,7 +39,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9813FA15B0F73466CCA39D86 /* Pods_Watchlist.framework in Frameworks */,
-				8227576F25CFF59800C24D51 /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

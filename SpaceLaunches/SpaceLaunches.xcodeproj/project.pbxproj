@@ -55,8 +55,6 @@
 		82A24F452561606500322D1D /* LaunchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A24F442561606500322D1D /* LaunchesView.swift */; };
 		82A24F50256160AD00322D1D /* LaunchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A24F4F256160AD00322D1D /* LaunchDetailView.swift */; };
 		82A24F6025617C6200322D1D /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A24F5F25617C6200322D1D /* Injection.swift */; };
-		82ECEC8925C696160044E735 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82ECEC8825C696160044E735 /* Core.framework */; };
-		82ECEC8A25C696160044E735 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 82ECEC8825C696160044E735 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		82EEE33F255F8BD300D51DB6 /* Error+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EEE33E255F8BD300D51DB6 /* Error+Ext.swift */; };
 		82EEE3462560348100D51DB6 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EEE3452560348100D51DB6 /* HomePresenter.swift */; };
 		82F1A1C225D1559A00CD31B0 /* SpaceLaunchesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F1A1C125D1559A00CD31B0 /* SpaceLaunchesTests.swift */; };
@@ -81,7 +79,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				8227575525CFE5CC00C24D51 /* LaunchDetail.framework in Embed Frameworks */,
-				82ECEC8A25C696160044E735 /* Core.framework in Embed Frameworks */,
 				8227577525CFFE5C00C24D51 /* Watchlist.framework in Embed Frameworks */,
 				8227571D25CFE29100C24D51 /* LaunchDetail.framework in Embed Frameworks */,
 				8227569425CBA2C000C24D51 /* Home.framework in Embed Frameworks */,
@@ -159,7 +156,6 @@
 				8227577425CFFE5C00C24D51 /* Watchlist.framework in Frameworks */,
 				8227571C25CFE29000C24D51 /* LaunchDetail.framework in Frameworks */,
 				881029739B7FEA8D43E7D064 /* Pods_SpaceLaunches.framework in Frameworks */,
-				82ECEC8925C696160044E735 /* Core.framework in Frameworks */,
 				8227569325CBA2C000C24D51 /* Home.framework in Frameworks */,
 				8227575425CFE5CC00C24D51 /* LaunchDetail.framework in Frameworks */,
 			);

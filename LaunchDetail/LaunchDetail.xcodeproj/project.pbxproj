@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		822756FA25CFE17300C24D51 /* LaunchDetail.h in Headers */ = {isa = PBXBuildFile; fileRef = 822756F825CFE17300C24D51 /* LaunchDetail.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8227571825CFE28700C24D51 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8227571725CFE28700C24D51 /* Core.framework */; };
-		8227571925CFE28700C24D51 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8227571725CFE28700C24D51 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8227577825D0026900C24D51 /* GetLaunchDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227577725D0026900C24D51 /* GetLaunchDetailPresenter.swift */; };
 		82F1A1F325D155B700CD31B0 /* LaunchDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F1A1F225D155B700CD31B0 /* LaunchDetailTests.swift */; };
 		82F1A1F525D155B700CD31B0 /* LaunchDetail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822756F525CFE17300C24D51 /* LaunchDetail.framework */; };
@@ -25,20 +23,6 @@
 			remoteInfo = LaunchDetail;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		8227571A25CFE28700C24D51 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				8227571925CFE28700C24D51 /* Core.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0B42B3C772542D254BBAC72A /* Pods_LaunchDetail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaunchDetail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,7 +44,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF1F4238DE4A1C75B5886256 /* Pods_LaunchDetail.framework in Frameworks */,
-				8227571825CFE28700C24D51 /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +171,6 @@
 				822756F125CFE17300C24D51 /* Sources */,
 				822756F225CFE17300C24D51 /* Frameworks */,
 				822756F325CFE17300C24D51 /* Resources */,
-				8227571A25CFE28700C24D51 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
