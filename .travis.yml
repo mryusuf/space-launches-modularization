@@ -1,7 +1,9 @@
 before_install:
   - gem install cocoapods
-install:
   - brew update && brew upgrade swiftlint
+  - gem update concurrent-ruby
+  - pod setup
+install:
   - pod install --project-directory=SpaceLaunches/
 language: swift
 osx_image: xcode12.2
