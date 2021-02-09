@@ -4,7 +4,7 @@ before_install:
   - gem update concurrent-ruby
   - pod setup
 install:
-  - pod install --project-directory=SpaceLaunches/
+  - pod install --project-directory=SpaceLaunches/ --repo-update
 language: swift
 osx_image: xcode12.2
 xcode_workspace: SpaceLaunches/SpaceLaunches.xcworkspace
