@@ -16,7 +16,7 @@ end
 def feature_pods
   pod 'Alamofire', '~> 5.2'
   pod 'RxDataSources', '~> 4.0'
-  pod 'Core'
+  pod 'Core', '1.0.1'
 end
 
 target 'SpaceLaunches' do
