@@ -14,10 +14,24 @@
 		8227576925CFF23300C24D51 /* ToggleWatchlistRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227576825CFF23300C24D51 /* ToggleWatchlistRepository.swift */; };
 		8227576C25CFF58300C24D51 /* WatchlistTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227576B25CFF58300C24D51 /* WatchlistTransformer.swift */; };
 		8227577B25D00C0900C24D51 /* ToggleWatchlistLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227577A25D00C0900C24D51 /* ToggleWatchlistLocalDataSource.swift */; };
+		82764EE325D53E3100232235 /* WatchlistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82764EE225D53E3100232235 /* WatchlistTests.swift */; };
+		82764EE525D53E3100232235 /* Watchlist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8227573125CFE57A00C24D51 /* Watchlist.framework */; };
 		9813FA15B0F73466CCA39D86 /* Pods_Watchlist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA5F672C3D34160E0A2CC0D /* Pods_Watchlist.framework */; };
+		B345CCA9E35F06CDED2E0714 /* Pods_WatchlistTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C7653A0E43F7A328A92748 /* Pods_WatchlistTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		82764EE625D53E3100232235 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8227572825CFE57A00C24D51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8227573025CFE57A00C24D51;
+			remoteInfo = Watchlist;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2E5093B656DAB4A10611A72E /* Pods-WatchlistTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchlistTests.debug.xcconfig"; path = "Target Support Files/Pods-WatchlistTests/Pods-WatchlistTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8227573125CFE57A00C24D51 /* Watchlist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Watchlist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8227573425CFE57A00C24D51 /* Watchlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Watchlist.h; sourceTree = "<group>"; };
 		8227573525CFE57A00C24D51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -28,7 +42,12 @@
 		8227576B25CFF58300C24D51 /* WatchlistTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistTransformer.swift; sourceTree = "<group>"; };
 		8227576E25CFF59800C24D51 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8227577A25D00C0900C24D51 /* ToggleWatchlistLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleWatchlistLocalDataSource.swift; sourceTree = "<group>"; };
+		82764EE025D53E3100232235 /* WatchlistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchlistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82764EE225D53E3100232235 /* WatchlistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistTests.swift; sourceTree = "<group>"; };
+		82764EE425D53E3100232235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88D2613FA962A4096C59537F /* Pods-Watchlist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watchlist.debug.xcconfig"; path = "Target Support Files/Pods-Watchlist/Pods-Watchlist.debug.xcconfig"; sourceTree = "<group>"; };
+		92C7653A0E43F7A328A92748 /* Pods_WatchlistTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchlistTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D0EAE3FBE66540EF9EEE3C /* Pods-WatchlistTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchlistTests.release.xcconfig"; path = "Target Support Files/Pods-WatchlistTests/Pods-WatchlistTests.release.xcconfig"; sourceTree = "<group>"; };
 		CDD3044BE34CC0FD10BF2D4F /* Pods-Watchlist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watchlist.release.xcconfig"; path = "Target Support Files/Pods-Watchlist/Pods-Watchlist.release.xcconfig"; sourceTree = "<group>"; };
 		FDA5F672C3D34160E0A2CC0D /* Pods_Watchlist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watchlist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -42,6 +61,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		82764EDD25D53E3100232235 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82764EE525D53E3100232235 /* Watchlist.framework in Frameworks */,
+				B345CCA9E35F06CDED2E0714 /* Pods_WatchlistTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -50,6 +78,8 @@
 			children = (
 				88D2613FA962A4096C59537F /* Pods-Watchlist.debug.xcconfig */,
 				CDD3044BE34CC0FD10BF2D4F /* Pods-Watchlist.release.xcconfig */,
+				2E5093B656DAB4A10611A72E /* Pods-WatchlistTests.debug.xcconfig */,
+				B7D0EAE3FBE66540EF9EEE3C /* Pods-WatchlistTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../SpaceLaunches/Pods;
@@ -60,6 +90,7 @@
 			children = (
 				8227576E25CFF59800C24D51 /* Core.framework */,
 				FDA5F672C3D34160E0A2CC0D /* Pods_Watchlist.framework */,
+				92C7653A0E43F7A328A92748 /* Pods_WatchlistTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -68,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				8227573325CFE57A00C24D51 /* Watchlist */,
+				82764EE125D53E3100232235 /* WatchlistTests */,
 				8227573225CFE57A00C24D51 /* Products */,
 				0FC25E5BF45870950DE578CD /* Pods */,
 				3D83F9DAF7CBF474526C73CF /* Frameworks */,
@@ -78,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				8227573125CFE57A00C24D51 /* Watchlist.framework */,
+				82764EE025D53E3100232235 /* WatchlistTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				8227575925CFE5EC00C24D51 /* Local */,
-				8227575825CFE5E700C24D51 /* Remote */,
 				8227576225CFE76F00C24D51 /* GetWatchlistRepository.swift */,
 				8227576825CFF23300C24D51 /* ToggleWatchlistRepository.swift */,
 			);
@@ -113,13 +145,6 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		8227575825CFE5E700C24D51 /* Remote */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Remote;
-			sourceTree = "<group>";
-		};
 		8227575925CFE5EC00C24D51 /* Local */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +152,15 @@
 				8227577A25D00C0900C24D51 /* ToggleWatchlistLocalDataSource.swift */,
 			);
 			path = Local;
+			sourceTree = "<group>";
+		};
+		82764EE125D53E3100232235 /* WatchlistTests */ = {
+			isa = PBXGroup;
+			children = (
+				82764EE225D53E3100232235 /* WatchlistTests.swift */,
+				82764EE425D53E3100232235 /* Info.plist */,
+			);
+			path = WatchlistTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,17 +196,41 @@
 			productReference = 8227573125CFE57A00C24D51 /* Watchlist.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		82764EDF25D53E3100232235 /* WatchlistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82764EE825D53E3100232235 /* Build configuration list for PBXNativeTarget "WatchlistTests" */;
+			buildPhases = (
+				6FFEEF78C4F2483949B39F24 /* [CP] Check Pods Manifest.lock */,
+				82764EDC25D53E3100232235 /* Sources */,
+				82764EDD25D53E3100232235 /* Frameworks */,
+				82764EDE25D53E3100232235 /* Resources */,
+				A9C8CB1A026101DF1EA11700 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82764EE725D53E3100232235 /* PBXTargetDependency */,
+			);
+			name = WatchlistTests;
+			productName = WatchlistTests;
+			productReference = 82764EE025D53E3100232235 /* WatchlistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		8227572825CFE57A00C24D51 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					8227573025CFE57A00C24D51 = {
 						CreatedOnToolsVersion = 12.2;
 						LastSwiftMigration = 1220;
+					};
+					82764EDF25D53E3100232235 = {
+						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
@@ -190,12 +248,20 @@
 			projectRoot = "";
 			targets = (
 				8227573025CFE57A00C24D51 /* Watchlist */,
+				82764EDF25D53E3100232235 /* WatchlistTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8227572F25CFE57A00C24D51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82764EDE25D53E3100232235 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -227,6 +293,45 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6FFEEF78C4F2483949B39F24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchlistTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9C8CB1A026101DF1EA11700 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchlistTests/Pods-WatchlistTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchlistTests/Pods-WatchlistTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatchlistTests/Pods-WatchlistTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -243,7 +348,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		82764EDC25D53E3100232235 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82764EE325D53E3100232235 /* WatchlistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82764EE725D53E3100232235 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8227573025CFE57A00C24D51 /* Watchlist */;
+			targetProxy = 82764EE625D53E3100232235 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8227573725CFE57A00C24D51 /* Debug */ = {
@@ -423,6 +544,44 @@
 			};
 			name = Release;
 		};
+		82764EE925D53E3100232235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E5093B656DAB4A10611A72E /* Pods-WatchlistTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS8DA7YN5X;
+				INFOPLIST_FILE = WatchlistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indrapp.SpaceLaunches.WatchlistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82764EEA25D53E3100232235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7D0EAE3FBE66540EF9EEE3C /* Pods-WatchlistTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS8DA7YN5X;
+				INFOPLIST_FILE = WatchlistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indrapp.SpaceLaunches.WatchlistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -440,6 +599,15 @@
 			buildConfigurations = (
 				8227573A25CFE57A00C24D51 /* Debug */,
 				8227573B25CFE57A00C24D51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82764EE825D53E3100232235 /* Build configuration list for PBXNativeTarget "WatchlistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82764EE925D53E3100232235 /* Debug */,
+				82764EEA25D53E3100232235 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

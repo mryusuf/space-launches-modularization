@@ -51,7 +51,8 @@ class LaunchesView: UIViewController {
   private var scrollViewHeight: CGFloat = 0
   private var containerViewHeight: CGFloat = 0
   private var bags = DisposeBag()
-  init(presenter: GetHomeLaunchesPresenter<
+  
+  public init(presenter: GetHomeLaunchesPresenter<
     Any,
     HomeLaunchesDomainModel,
     Interactor<

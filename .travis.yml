@@ -12,4 +12,4 @@ xcode_workspace: SpaceLaunches/SpaceLaunches.xcworkspace
 xcode_scheme: SpaceLaunches
 xcode_destination: platform=iOS Simulator,OS=14.2,name=iPhone 12
 script:
- - xcodebuild test -workspace 'SpaceLaunches/SpaceLaunches.xcworkspace' -scheme 'SpaceLaunches' -destination 'platform=iOS Simulator,OS=14.2,name=iPhone 12' -quiet
+ - set -o pipefail && xcodebuild test -workspace 'SpaceLaunches/SpaceLaunches.xcworkspace' -scheme 'SpaceLaunches' -destination 'platform=iOS Simulator,OS=14.2,name=iPhone 12' | xcpretty -c

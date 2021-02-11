@@ -11,17 +11,9 @@ import Core
 import Home
 import LaunchDetail
 import Watchlist
+import About
 
 final class Injection: NSObject {
-  
-   func provideRepository() -> SpaceRepositoryProtocol {
-
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    let realm = appDelegate.realm
-    let local: LocalDataSource = LocalDataSource.shared(realm)
-    
-    return SpaceRepository.shared( local)
-  }
   
   func provideHome() -> HomeUseCase {
     
@@ -77,11 +69,11 @@ final class Injection: NSObject {
     return Interactor(repository: repository) as! U
 }
   
-  func provideAbout() -> AboutUseCase {
+  func provideAbout<U: UseCase>() -> U where U.Request == Any, U.Response == AboutDomainModel {
     
-    let repo = provideRepository()
-    return AboutInteractor(repo: repo)
+    let repository = GetAboutRepository()
     
-  }
+    return Interactor(repository: repository) as! U
+}
   
 }

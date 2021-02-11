@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '11.0'
+platform :ios, '13.0'
 
 source 'https://cdn.cocoapods.org/'
 source 'https://github.com/mryusuf/space-launches-corepodspec'
@@ -41,13 +41,37 @@ target 'Home' do
   feature_pods
 end
 
+target 'HomeTests' do
+  project '../Home/Home'
+  feature_pods
+  pod 'RxBlocking'
+end
+
 target 'LaunchDetail' do
   project '../LaunchDetail/LaunchDetail'
   feature_pods
 end
 
+target 'LaunchDetailTests' do
+  project '../LaunchDetail/LaunchDetail'
+  feature_pods
+  pod 'RxBlocking'
+end
+
 target 'Watchlist' do
   project '../Watchlist/Watchlist'
   feature_pods
+end
+
+target 'WatchlistTests' do
+  project '../Watchlist/Watchlist'
+  feature_pods
+  pod 'RxBlocking'
+end
+
+target 'About' do
+  project '../About/About'
+  pod 'RxSwift', '~>5.0'
+  pod 'Core', '1.0.1'
 end
 

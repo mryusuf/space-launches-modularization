@@ -20,16 +20,13 @@ class RootRouter {
   
   func buildHome() -> UIViewController {
     
-    let view = HomeView()
     var interactor = Injection().provideHome()
-    let presenter = HomePresenter()
     let router = HomeRouter()
     
-    view.presenter = presenter
+    let presenter = HomePresenter(interactor: interactor, router: router)
+    let view = HomeView(presenter: presenter)
     
     presenter.view = view
-    presenter.interactor = interactor
-    presenter.router = router
     
     interactor.presenter = presenter
     

@@ -9,15 +9,15 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "82ECEC6925C6940C0044E735"
-               BuildableName = "Core.framework"
-               BlueprintName = "Core"
-               ReferencedContainer = "container:Core.xcodeproj">
+               BlueprintIdentifier = "82F1A1DE25D155AF00CD31B0"
+               BuildableName = "HomeTests.xctest"
+               BlueprintName = "HomeTests"
+               ReferencedContainer = "container:Home.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "82F1A1DE25D155AF00CD31B0"
+               BuildableName = "HomeTests.xctest"
+               BlueprintName = "HomeTests"
+               ReferencedContainer = "container:Home.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -50,10 +60,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "82ECEC6925C6940C0044E735"
-            BuildableName = "Core.framework"
-            BlueprintName = "Core"
-            ReferencedContainer = "container:Core.xcodeproj">
+            BlueprintIdentifier = "82F1A1DE25D155AF00CD31B0"
+            BuildableName = "HomeTests.xctest"
+            BlueprintName = "HomeTests"
+            ReferencedContainer = "container:Home.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

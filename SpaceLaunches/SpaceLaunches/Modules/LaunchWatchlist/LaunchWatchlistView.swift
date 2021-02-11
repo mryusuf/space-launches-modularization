@@ -77,9 +77,11 @@ class LaunchWatchlistView: UIViewController {
     self.navigationItem.largeTitleDisplayMode = .always
     self._presenter.list.subscribe(
       onNext: { list in
+        print(list)
         if list.count == 0 {
           self.showEmptyState()
         } else {
+          self.hideEmptyState()
           let launchViewList = LaunchMapper.mapWatchlistLaunchesDomainToView(input: list)
           self.displayLaunches(launchViewList)
         }
@@ -159,23 +161,28 @@ extension LaunchWatchlistView: LaunchWatchlistViewProtocol {
   func showEmptyState() {
     
     self.launchesUIView?.isHidden = true
-    let emptyLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 150, height: 40))
-    emptyLabel.text = "No Launches in your Watchlist yet :("
-    emptyLabel.font = .systemFont(ofSize: 14, weight: .medium)
-    
-    self.view.addSubview(emptyLabel)
-    
-    emptyLabel.snp.makeConstraints { make in
-      make.center.equalToSuperview()
+    if let emptyLabel = self.emptyLabel {
+      emptyLabel.isHidden = false
+    } else {
+      let emptyLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 150, height: 40))
+      emptyLabel.text = "No Launches in your Watchlist yet :("
+      emptyLabel.font = .systemFont(ofSize: 14, weight: .medium)
+      
+      self.view.addSubview(emptyLabel)
+      
+      self.emptyLabel = emptyLabel
+      
+      self.emptyLabel?.snp.makeConstraints { make in
+        make.center.equalToSuperview()
+      }
     }
-    
-    self.emptyLabel = emptyLabel
     
   }
   
   func hideEmptyState() {
     if let emptyLabel = emptyLabel {
       emptyLabel.isHidden = true
+      self.launchesUIView?.isHidden = false
     }
   }
   

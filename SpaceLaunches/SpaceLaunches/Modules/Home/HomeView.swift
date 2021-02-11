@@ -9,14 +9,22 @@ import UIKit
 
 protocol HomeViewProtocol: class {
   
-  var presenter: HomePresenterProtocol? { get set }
   func display(_ viewControllers: [UIViewController])
   
 }
 
 class HomeView: UITabBarController {
   
-  var presenter: HomePresenterProtocol?
+  let _presenter: HomePresenterProtocol?
+  
+  public init(presenter: HomePresenterProtocol) {
+    _presenter = presenter
+    super.init(nibName: nil, bundle: nil)
+  }
+  
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
   
 }
 

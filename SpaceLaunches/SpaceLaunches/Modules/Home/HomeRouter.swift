@@ -9,6 +9,7 @@ import UIKit
 import Core
 import Home
 import Watchlist
+import About
 
 protocol HomeRouterProtocol {
   
@@ -49,9 +50,6 @@ extension HomeRouter: HomeRouterProtocol {
   }
   
   func buildLaunches() -> UIViewController {
-//    let view = LaunchesView()
-//    var interactor = Injection.init().provideLaunches()
-//    let presenter = LaunchesPresenter()
     let upcomingGoLaunchesUseCase: Interactor<
       Any,
       [HomeLaunchesDomainModel],
@@ -74,42 +72,25 @@ extension HomeRouter: HomeRouterProtocol {
     let router = LaunchesRouter()
     
     let view = LaunchesView(presenter: presenter)
-//
-//    presenter.view = view
-//    presenter.interactor = interactor
-//    presenter.router = router
-//
-//    interactor.presenter = presenter
-//
-//    router.presenter = presenter
+
     router.viewController = view
     
     return view
   }
   
   func buildAbout() -> UIViewController {
-    let view = AboutView()
-    var interactor = Injection.init().provideAbout()
-    let presenter = AboutPresenter()
-    let router = AboutRouter()
-    
-    view.presenter = presenter
-    
-    presenter.view = view
-    presenter.interactor = interactor
-    presenter.router = router
-    
-    interactor.presenter = presenter
-    
-    router.presenter = presenter
-    router.viewController = view
+    let aboutUseCase: Interactor<
+      Any,
+      AboutDomainModel,
+      GetAboutRepository> = Injection.init().provideAbout()
+    let presenter = GetAboutPresenter(aboutUseCase: aboutUseCase)
+    let view = AboutView(presenter: presenter)
     
     return view
   }
   
   func buildWatchlist() -> UIViewController {
     
-//    var interactor = Injection.init().provideLaunchWatchlist()
     let interactor: Interactor<
       Any,
       [LaunchWatchlistDomainModel],
@@ -117,21 +98,10 @@ extension HomeRouter: HomeRouterProtocol {
         GetWatchlistLocalDataSource,
         WatchlistTransformer>
     > = Injection.init().provideGetWatchList()
-    
-//    let presenter = LaunchWatchlistPresenter()
+  
     let presenter = GetListPresenter(useCase: interactor)
     let router = LaunchWatchlistRouter()
     let view = LaunchWatchlistView(presenter: presenter)
-    
-//    view.presenter = presenter
-//
-//    presenter.view = view
-//    presenter.interactor = interactor
-//    presenter.router = router
-//
-//    interactor.presenter = presenter
-//
-//    router.presenter = presenter
     router.viewController = view
     
     return view

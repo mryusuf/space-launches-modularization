@@ -7,20 +7,38 @@
 
 import UIKit
 import SnapKit
+import Core
+import About
+import RxSwift
 
 protocol AboutViewProtocol: class {
   
-  var presenter: AboutPresenterProtocol? { get set }
-  func display(_ model: AboutModel)
+  func display(_ model: AboutDomainModel)
   
 }
 
 class AboutView: UIViewController {
   
-  var presenter: AboutPresenterProtocol?
+  let _presenter: GetAboutPresenter<
+    Any,
+    AboutDomainModel,
+    Interactor<
+      Any,
+      AboutDomainModel,
+      GetAboutRepository>
+  >
+  private var bags = DisposeBag()
   
-  init() {
-      super.init(nibName: nil, bundle: nil)
+  public init(presenter: GetAboutPresenter<
+    Any,
+    AboutDomainModel,
+    Interactor<
+      Any,
+      AboutDomainModel,
+      GetAboutRepository>
+  >) {
+    _presenter = presenter
+    super.init(nibName: nil, bundle: nil)
       
       self.title = "About"
   }
@@ -32,7 +50,12 @@ class AboutView: UIViewController {
   override func loadView() {
     super.loadView()
     
-    self.presenter?.setupView()
+    self._presenter.aboutData.subscribe(
+      onNext: { data in
+        self.display(data)
+      }
+    ).disposed(by: bags)
+    self._presenter.getData(request: nil)
   }
   
   override func viewDidLoad() {
@@ -42,7 +65,7 @@ class AboutView: UIViewController {
 
 extension AboutView: AboutViewProtocol {
   
-  func display(_ model: AboutModel) {
+  func display(_ model: AboutDomainModel) {
     
     let aboutImageView = UIImageView()
     aboutImageView.image = UIImage(named: model.imageName)

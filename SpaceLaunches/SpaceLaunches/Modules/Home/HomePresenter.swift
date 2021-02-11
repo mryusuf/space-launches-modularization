@@ -10,8 +10,6 @@ import RxSwift
 
 protocol HomePresenterProtocol: class {
   
-  var interactor: HomeUseCase? { get set }
-  var router: HomeRouterProtocol? { get set }
   var view: HomeViewProtocol? { get set }
   func setupViewControllers()
   
@@ -19,20 +17,22 @@ protocol HomePresenterProtocol: class {
 
 class HomePresenter {
   
-  var interactor: HomeUseCase?
-  var router: HomeRouterProtocol?
+  let _interactor: HomeUseCase
+  let _router: HomeRouterProtocol
   weak var view: HomeViewProtocol?
   private var bags = DisposeBag()
   
+  public init(interactor: HomeUseCase,router: HomeRouterProtocol) {
+    _interactor = interactor
+    _router = router
+  }
 }
 
 extension HomePresenter: HomePresenterProtocol {
   
   func setupViewControllers() {
     
-    guard let controllers = router?.getViewControllers() else {
-      return
-    }
+    let controllers = _router.getViewControllers()
     self.view?.display(controllers)
   }
   

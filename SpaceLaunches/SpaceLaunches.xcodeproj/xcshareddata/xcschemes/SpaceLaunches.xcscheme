@@ -38,6 +38,36 @@
                ReferencedContainer = "container:SpaceLaunches.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "82F1A1DE25D155AF00CD31B0"
+               BuildableName = "HomeTests.xctest"
+               BlueprintName = "HomeTests"
+               ReferencedContainer = "container:../Home/Home.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "82F1A1EF25D155B700CD31B0"
+               BuildableName = "LaunchDetailTests.xctest"
+               BlueprintName = "LaunchDetailTests"
+               ReferencedContainer = "container:../LaunchDetail/LaunchDetail.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "82764EDF25D53E3100232235"
+               BuildableName = "WatchlistTests.xctest"
+               BlueprintName = "WatchlistTests"
+               ReferencedContainer = "container:../Watchlist/Watchlist.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
